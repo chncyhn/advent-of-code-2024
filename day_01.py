@@ -3,7 +3,7 @@ from collections import Counter
 
 
 def read_input():
-    with open("day_1.txt") as f:
+    with open("day_01.txt") as f:
         rows = []
         for line in f:
             rows += [list(map(int, line.strip().split()))]
