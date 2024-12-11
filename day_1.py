@@ -19,10 +19,7 @@ def solve_part_1(rows):
 def solve_part_2(rows):
     A = [r[0] for r in rows]
     B_cnts = Counter([r[1] for r in rows])
-    ret = 0
-    for a in A:
-        ret += a * B_cnts[a]
-    return ret
+    return sum([a * B_cnts[a] for a in A])
 
 
 if __name__ == "__main__":
